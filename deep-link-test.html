@@ -1,0 +1,135 @@
+<head>
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+</head>
+
+<body>
+    <h2>Deep Links</h2>
+    <p>
+
+    <b>DL; no host, no path, no query params</b><br>
+     <b>Android: </b><i>does nothing</i><br>
+     <b>iOS: </b><i>Prompt; puts app in foreground; does nothing</i><br>
+    <a href="drivewyze://">drivewyze://</a></p><p>
+
+    <b>DL; with host (iOS app ID), no path, no query params</b><br>
+     <b>Android: </b><i>does nothing</i><br>
+     <b>iOS: </b><i>Prompt; puts app in foreground; does nothing</i><br>
+    <a href="drivewyze://com.drivewyze.agatha">drivewyze://com.drivewyze.agatha</a></p><p>
+
+    <b>DL; with host (Android app ID), no path, no query params</b><br>
+     <b>Android: </b><i>does nothing</i><br>
+     <b>iOS: </b><i>Prompt; puts app in foreground; does nothing</i><br>
+    <a href="drivewyze://com.drivewyze.agatha2">drivewyze://com.drivewyze.agatha2</a></p><p>
+
+    <b>DL; with host (iOS app ID), with invalid path, no query params</b><br>
+     <b>Android: </b><i>does nothing</i><br>
+     <b>iOS: </b><i>Prompt; puts app in foreground; does nothing</i><br>
+    <a href="drivewyze://com.drivewyze.agatha/app">drivewyze://com.drivewyze.agatha/app</a></p><p>
+
+    <b>DL; with host (Android app ID), with invalid path, no query params</b><br>
+     <b>Android: </b><i>does nothing</i><br>
+     <b>iOS: </b><i>Prompt; puts app in foreground; does nothing</i><br>
+    <a href="drivewyze://com.drivewyze.agatha2/apps">drivewyze://com.drivewyze.agatha2/apps</a></p><p>
+    
+    <b>DL; with host (iOS app ID), with valid path, no query params</b><br>
+     <b>Android: </b><i>Puts app in foreground; does nothing</i><br>
+     <b>iOS: </b><i>Prompt; puts app in foreground; does nothing</i><br>
+    <a href="drivewyze://com.drivewyze.agatha/app/">drivewyze://com.drivewyze.agatha/app/</a></p><p>
+
+    <b>DL; with host (iOS app ID), with valid path, start + no query params</b><br>x`
+     <b>Android: </b><i>Puts app in foreground; does nothing</i><br>
+     <b>iOS: </b><i>Prompt; puts app in foreground; does nothing</i><br>
+    <a href="drivewyze://com.drivewyze.agatha/app/start">drivewyze://com.drivewyze.agatha/app/start</a></p><p>
+
+    <b>DL; with host (Android app ID), with invalid path, no query params</b><br>
+     <b>Android: </b><i>does nothing</i><br>
+     <b>iOS: </b><i>Prompt; puts app in foreground; does nothing</i><br>
+    <a href="drivewyze://com.drivewyze.agatha2/apps/">drivewyze://com.drivewyze.agatha2/apps/</a></p><p>
+    
+    <b>DL; with host (iOS app ID), valid path, multi-vehicle fleet/specified driver/NO specified vehicle query params</b><br>
+     <b>Android: </b><i>Puts app in foreground; validates params; redirects accordingly</i><br>
+     <b>iOS: </b><i>Prompt; puts app in foreground; validates params; redirects accordingly</i><br>
+    <a href="drivewyze://com.drivewyze.agatha/app/start?ident.credential.id=88617&ident.credential.token=NUdA8pu-qHNNxwiIw-X-KzQdn-oJk-UzDefzDLL93HI&ident.driver.id=243208">
+        drivewyze://com.drivewyze.agatha/app/start?ident.credential.id=88617&amp;ident.credential.token=NUdA8pu-qHNNxwiIw-X-KzQdn-oJk-UzDefzDLL93HI     &amp;ident.driver.id=243208</a></p><p>
+
+    <b>DL; with host (Android app ID), valid path, multi-vehicle fleet/specified driver/specified vehicle query params</b><br>
+     <b>Android: </b><i>Puts app in foreground; validates params; redirects accordingly</i><br>
+     <b>iOS: </b><i>Prompt; puts app in foreground; validates params; redirects accordingly</i><br>
+    <a href="drivewyze://com.drivewyze.agatha2/app/start?ident.credential.id=88618&ident.credential.token=BpnG7nW0SDWksiFE3E4rMh7wTiW3R-jfqlPNXxqGudU&ident.driver.id=243208&ident.vehicle.id=880675">
+        drivewyze://com.drivewyze.agatha2/app/start?ident.credential.id=88618&amp;ident.credential.token=BpnG7nW0SDWksiFE3E4rMh7wTiW3R-jfqlPNXxqGudU&amp;ident.driver.id=243208&amp;ident.vehicle.id=880675</a></p><p>
+
+    <b>DL; with host (Android app ID), valid path, multi-vehicle fleet/specified driver/specified vehicle query params, google.ca callback</b><br>
+     <b>Android: </b><i>Puts app in foreground; validates params; redirects accordingly</i><br>
+     <b>iOS: </b><i>Prompt; puts app in foreground; validates params; redirects accordingly</i><br>
+    <a href="drivewyze://com.drivewyze.agatha2/app/start?ident.credential.id=88619&ident.credential.token=GudN0oQr6ckK0dbuymHdixh9PbR7uFsGGHPbc1___p8&ident.driver.id=243208&ident.vehicle.id=880675&callback.uri=https://www.google.ca">
+        drivewyze://com.drivewyze.agatha2/app/start?ident.credential.id=88619&amp;ident.credential.token=GudN0oQr6ckK0dbuymHdixh9PbR7uFsGGHPbc1___p8&amp;ident.driver.id=243208&amp;ident.vehicle.id=880675&amp;callback.uri=https://www.google.ca</a></p><p>
+        
+    <b>DL; with host (iOS app ID), valid path, single-vehicle fleet/specified driver/NO specified vehicle query params</b><br>
+     <b>Android: </b><i>Puts app in foreground; validates params; redirects accordingly</i><br>
+     <b>iOS: </b><i>Prompt; puts app in foreground; validates params; redirects accordingly</i><br>
+    <a href="drivewyze://com.drivewyze.agatha/app/start?ident.credential.id=88622&ident.credential.token=T2SzYwB_MbT0brOaBdkcZONuhs5z-qTWo-lWhdl4TIs&ident.driver.id=245454">
+        drivewyze://com.drivewyze.agatha/app/start?ident.credential.id=88622&amp;ident.credential.token=T2SzYwB_MbT0brOaBdkcZONuhs5z-qTWo-lWhdl4TIs&amp;ident.driver.id=245454</a></p><p>
+
+    <b>DL; with host (Android app ID), valid path, single-vehicle fleet/specified driver/specified vehicle query params</b><br>
+     <b>Android: </b><i>Puts app in foreground; validates params; redirects accordingly</i><br>
+     <b>iOS: </b><i>Prompt; puts app in foreground; validates params; redirects accordingly</i><br>
+    <a href="drivewyze://com.drivewyze.agatha2/app/start?ident.credential.id=88623&ident.credential.token=LJqSDN7MI_fnvZ_fEtth2BVF4ciU47N--BsO_GDfIok&ident.driver.id=245454&ident.vehicle.id=880367">
+        drivewyze://com.drivewyze.agatha2/app/start?ident.credential.id=88623&amp;ident.credential.token=LJqSDN7MI_fnvZ_fEtth2BVF4ciU47N--BsO_GDfIok&amp;ident.driver.id=245454&amp;ident.vehicle.id=880367</a></p><p>
+
+    <b>DL; invalid host, no path, no query params</b><br>
+     <b>Android: </b><i>does nothing</i><br>
+     <b>iOS: </b><i>Prompt; puts app in foreground; does nothing</i><br>
+    <a href="drivewyze://jdbenito.github.io">drivewyze://jdbenito.github.io</a></p><p>
+
+    </p>
+    <h2>Universal Links</h2>
+    <p>
+
+    <b>UL; valid host, no path, no query params</b><br>
+     <b>Android: </b><i>Goes to root page of site</i><br>
+     <b>iOS: </b><i>Goes to root page of site</i><br>
+    <a href="https://jdbenito.github.io">https://jdbenito.github.io</a></p><p>
+    
+    <b>UL; valid host, invalid path, no query params</b><br>
+     <b>Android: </b><i>/app route of site if it exists; 404 otherwise</i><br>
+     <b>iOS: </b><i>/app route of site if it exists; 404 otherwise</i><br>
+    <a href="https://jdbenito.github.io/app">https://jdbenito.github.io/app</a></p><p>
+    
+    <b>UL; valid host, invalid path, no query params</b><br>
+     <b>Android: </b><i>/apps route of site if it exists; 404 otherwise</i><br>
+     <b>iOS: </b><i>/apps route of site if it exists; 404 otherwise</i><br>
+    <a href="https://jdbenito.github.io/apps">https://jdbenito.github.io/apps</a></p><p>
+    
+    <b>UL; valid host, valid path, no query params</b><br>
+     <b>Android: </b><i>Puts app in foreground; does nothing</i><br>
+     <b>iOS: </b><i>Puts app in foreground; does nothing</i><br>
+    <a href="https://jdbenito.github.io/app/">https://jdbenito.github.io/app/</a></p><p>
+    
+    <b>UL; valid host, valid path, multi-vehicle fleet/specified driver/NO specified vehicle query params</b><br>
+     <b>Android: </b><i>Puts app in foreground; validates params; redirects accordingly</i><br>
+     <b>iOS: </b><i>Prompt; puts app in foreground; validates params; redirects accordingly</i><br>
+    <a href="https://jdbenito.github.io/app/start?ident.credential.id=88620&ident.credential.token=JpbTW93KCTj9gWP8jzpuy-vDuwwhMFdOS4ll37VYsJY&ident.driver.id=243208&callback.uri=https://www.google.ca">
+        https://jdbenito.github.io/app/start?ident.credential.id=88620&amp;ident.credential.token=JpbTW93KCTj9gWP8jzpuy-vDuwwhMFdOS4ll37VYsJY&amp;ident.driver.id=243208&amp;callback.uri=https://www.google.ca</a></p><p>
+
+    <b>UL; valid host, valid path, multi-vehicle fleet/specified driver/specified vehicle query params</b><br>
+     <b>Android: </b><i>Puts app in foreground; validates params; redirects accordingly</i><br>
+     <b>iOS: </b><i>Prompt; puts app in foreground; validates params; redirects accordingly</i><br>
+    <a href="https://jdbenito.github.io/app/start?ident.credential.id=88621&ident.credential.token=xpDYHXKmG_reA8MdkZfy-iYjjNDkqxhKHAMopMe0g3U&ident.driver.id=243208&ident.vehicle.id=880675&callback.uri=https://www.google.ca">
+        https://jdbenito.github.io/app/start?ident.credential.id=88621&amp;ident.credential.token=xpDYHXKmG_reA8MdkZfy-iYjjNDkqxhKHAMopMe0g3U&amp;ident.driver.id=243208&amp;ident.vehicle.id=880675&amp;callback.uri=https://www.google.ca</a></p><p>
+
+    <b>UL; valid host, valid path, single-vehicle fleet/specified driver/NO specified vehicle query params</b><br>
+     <b>Android: </b><i>Puts app in foreground; validates params; redirects accordingly</i><br>
+     <b>iOS: </b><i>Prompt; puts app in foreground; validates params; redirects accordingly</i><br>
+    <a href="https://jdbenito.github.io/app/start?ident.credential.id=88624&ident.credential.token=8H71oV6qF9fDN4Z7uqzfe4KXjyJNQI90ruKWe_HRDZI&ident.driver.id=245454&callback.uri=https://www.google.ca">
+        https://jdbenito.github.io/app/start?ident.credential.id=88624&amp;ident.credential.token=8H71oV6qF9fDN4Z7uqzfe4KXjyJNQI90ruKWe_HRDZI&amp;ident.driver.id=245454&amp;callback.uri=https://www.google.ca</a></p><p>
+    
+    <b>UL; valid host, valid path, single-vehicle fleet/specified driver/specified vehicle query params</b><br>
+     <b>Android: </b><i>Puts app in foreground; validates params; redirects accordingly</i><br>
+     <b>iOS: </b><i>Prompt; puts app in foreground; validates params; redirects accordingly</i><br>
+    <a href="https://jdbenito.github.io/app/start?ident.credential.id=88625&amp;ident.credential.token=UulUlS31YSFlqJ8aBjdOMb8wLseLu2KRn42RCG2wRq8&amp;ident.driver.id=245454&amp;ident.vehicle.id=880367&amp;callback.uri=https://www.google.ca">
+        https://jdbenito.github.io/app/start?ident.credential.id=88625&amp;ident.credential.token=UulUlS31YSFlqJ8aBjdOMb8wLseLu2KRn42RCG2wRq8&amp;ident.driver.id=245454&amp;ident.vehicle.id=880367&amp;callback.uri=https://www.google.ca</a></p><p>
+</p>
+</body>
+
