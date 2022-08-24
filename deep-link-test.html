@@ -5,9 +5,9 @@
 </head>
 
 <body>
-    <h2>Deep Links</h2>
-    <p>
-
+  <h2>Deep Links</h2>
+  <p>
+    <h3>Basic Host/Path Deep Links</h3>
     <b>DL; no host, no path, no query params</b><br>
      <b>Android: </b><i>does nothing</i><br>
      <b>iOS: </b><i>Prompt; puts app in foreground; does nothing</i><br>
@@ -38,6 +38,20 @@
      <b>iOS: </b><i>Prompt; puts app in foreground; does nothing</i><br>
     <a href="drivewyze://com.drivewyze.agatha/app/">drivewyze://com.drivewyze.agatha/app/</a></p><p>
 
+
+    <h3>STOP Path Deep Links</h3>   
+    <b>DL; valid host (iOS app ID), STOP path</b><br>
+     <b>Android: </b><i>Puts app in foreground; stops DRIVE, logs user out if currently logged in, displays landing page</i><br>
+     <b>iOS: </b><i>Prompt; puts app in foreground; stops DRIVE, logs user out if currently logged in, displays landing page</i><br>
+    <a href="drivewyze://com.drivewyze.agatha/app/stop">drivewyze://com.drivewyze.agatha/app/stop</a></p><p>
+
+    <b>DL; valid host (Android app ID), STOP path</b><br>
+     <b>Android: </b><i>Puts app in foreground; stops DRIVE, logs user out if currently logged in, displays landing page</i><br>
+     <b>iOS: </b><i>Prompt; puts app in foreground; stops DRIVE, logs user out if currently logged in, displays landing page</i><br>
+    <a href="drivewyze://com.drivewyze.agatha2/app/stop">drivewyze://com.drivewyze.agatha2/app/stop</a></p><p>
+
+
+    <h3>START Path Deep Links</h3>   
     <b>DL; with host (iOS app ID), with valid path, start + no query params</b><br>x`
      <b>Android: </b><i>Puts app in foreground; does nothing</i><br>
      <b>iOS: </b><i>Prompt; puts app in foreground; does nothing</i><br>
@@ -83,21 +97,11 @@
      <b>iOS: </b><i>Prompt; puts app in foreground; does nothing</i><br>
     <a href="drivewyze://jdbenito.github.io">drivewyze://jdbenito.github.io</a></p><p>
 
-    <b>DL; valid host (iOS app ID), STOP path</b><br>
-     <b>Android: </b><i>Puts app in foreground; stops DRIVE, logs user out if currently logged in, displays landing page</i><br>
-     <b>iOS: </b><i>Prompt; puts app in foreground; stops DRIVE, logs user out if currently logged in, displays landing page</i><br>
-    <a href="drivewyze://com.drivewyze.agatha/app/stop">drivewyze://com.drivewyze.agatha/app/stop</a></p><p>
 
-    <b>DL; valid host (Android app ID), STOP path</b><br>
-     <b>Android: </b><i>Puts app in foreground; stops DRIVE, logs user out if currently logged in, displays landing page</i><br>
-     <b>iOS: </b><i>Prompt; puts app in foreground; stops DRIVE, logs user out if currently logged in, displays landing page</i><br>
-    <a href="drivewyze://com.drivewyze.agatha2/app/stop">drivewyze://com.drivewyze.agatha2/app/stop</a></p><p>
-
-
-    </p>
-    <h2>Universal Links</h2>
-    <p>
-
+  </p>
+  <h2>Universal Links</h2>
+  <p>
+    <h3>Basic Host/Path Universal Links</h3>
     <b>UL; valid host, no path, no query params</b><br>
      <b>Android: </b><i>Goes to root page of site</i><br>
      <b>iOS: </b><i>Goes to root page of site</i><br>
@@ -117,7 +121,16 @@
      <b>Android: </b><i>Puts app in foreground; does nothing</i><br>
      <b>iOS: </b><i>Puts app in foreground; does nothing</i><br>
     <a href="https://jdbenito.github.io/app/">https://jdbenito.github.io/app/</a></p><p>
+
+
+    <h3>Basic STOP Path Universal Link</h3>
+    <b>UL; valid host, STOP path</b><br>
+     <b>Android: </b><i>puts app in foreground; stops DRIVE, logs user out if currently logged in, displays landing page</i><br>
+     <b>iOS: </b><i>puts app in foreground; stops DRIVE, logs user out if currently logged in, displays landing page</i><br>
+    <a href="https://jdbenito.github.io/app/stop">https://jdbenito.github.io/app/stop</a></p><p>
     
+      
+    <h3>Basic START Path Universal Links</h3>
     <b>UL; valid host, valid path, multi-vehicle fleet/specified driver/NO specified vehicle query params</b><br>
      <b>Android: </b><i>Puts app in foreground; validates params; redirects accordingly</i><br>
      <b>iOS: </b><i>Puts app in foreground; validates params; redirects accordingly</i><br>
@@ -141,11 +154,6 @@
      <b>iOS: </b><i>Puts app in foreground; validates params; redirects accordingly</i><br>
     <a href="https://jdbenito.github.io/app/start?ident.credential.id=88625&amp;ident.credential.token=UulUlS31YSFlqJ8aBjdOMb8wLseLu2KRn42RCG2wRq8&amp;ident.driver.id=245454&amp;ident.vehicle.id=880367&amp;callback.uri=https://www.google.ca">
         https://jdbenito.github.io/app/start?ident.credential.id=88625&amp;ident.credential.token=UulUlS31YSFlqJ8aBjdOMb8wLseLu2KRn42RCG2wRq8&amp;ident.driver.id=245454&amp;ident.vehicle.id=880367&amp;callback.uri=https://www.google.ca</a></p><p>
-    
-    <b>UL; valid host, STOP path</b><br>
-     <b>Android: </b><i>puts app in foreground; stops DRIVE, logs user out if currently logged in, displays landing page</i><br>
-     <b>iOS: </b><i>puts app in foreground; stops DRIVE, logs user out if currently logged in, displays landing page</i><br>
-    <a href="https://jdbenito.github.io/app/stop">https://jdbenito.github.io/app/stop</a></p><p>
-</p>
+  </p>
 </body>
 
